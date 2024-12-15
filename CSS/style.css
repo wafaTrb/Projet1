@@ -1,0 +1,27 @@
+/* Classe pour le logo */
+.logoESEN {
+    width: 150px; /* Ajuster la largeur de l'image selon vos besoins */
+    height: auto; /* Maintenir les proportions de l'image */
+    display: block;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Import de la police */
+
+@font-face {
+    font-family: 'Amster';
+    src: url('D:\Web/fonts/Amster.ttf') format('truetype'); /* Assurez-vous du bon format et chemin */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.presentation-titre {
+    font-family: 'Amster.ttf', cursive; /* Police manuscrite élégante */
+    font-size: 1.5em; /* Taille du texte (peut être ajustée selon vos besoins) */
+    color: #003366; /* Couleur bleue foncée */
+    text-align: left; /* Centrer le texte */
+    margin: 20px 0; /* Espacement vertical */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    letter-spacing: 1px; /* Espacement entre les lettres pour plus de lisibilité */
+}
