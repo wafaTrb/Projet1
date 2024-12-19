@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plateforme Carbone Accoutning</title>
+
+        <meta name="description"
+          content="Découvrez notre solution IOT de carbone Accounting."
+    />
+    <meta
+      name="keywords"
+      content="accueil, présentation, informations, Iot, services, nouveautés, entreprise, bienvenue"
+    />
+     <link rel="stylesheet" href="style.css"/>
+     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+    </head>
+    <body>
+        <header>
+
+            <object id="monSvg" type="image/svg+xml" data="test.svg"></object>
+
+         <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const svgObject = document.getElementById("monSvg");
+            if (svgObject) {
+                svgObject.addEventListener("load", () => {
+                    const svgDoc = svgObject.contentDocument;
+                    if (svgDoc) {
+                        const boutton = svgDoc.querySelector("#path3");
+                        if (cercle) {
+                            boutton.style.fill ="yellow"
+                            //console.log("cercle"); // Affiche l'élément dans la console
+                        } else {
+                            console.error("L'élément #path3 est introuvable dans le SVG.");
+                        }
+                    } else {
+                        console.error("Impossible d'accéder au document SVG.");
+                    }
+                });
+            } else {
+                console.error("L'élément avec l'ID 'monSvg' est introuvable.");
+            }
+        });
+          </script>
+
+        </header>
+    </body>
+</html>
