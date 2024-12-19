@@ -14,36 +14,54 @@
     />
      <link rel="stylesheet" href="style.css"/>
      <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+     <script defer src="../JS/page.js"></script>
     </head>
     <body>
         <header>
+             <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../images/logo.jpg" alt="Carbon Accounting Logo" width="250" height="80" class="me-2">
+                <span>Carbon Accounting</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Login</a>
+            </div>
+        </div>
+    </nav>
 
-            <object id="monSvg" type="image/svg+xml" data="test.svg"></object>
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-12 text-center">
+                <object id="monSvg" type="image/svg+xml" data="maquette finale.svg"></object>
+                <h1 class="mt-4">Carbon Accounting</h1>
+                <p class="text-muted">Track and manage your carbon footprint efficiently</p>
+                <p id="ppmValue">Current CO2: 0 ppm</p>
+                
+            </div>
+        </div>
+    </div>
 
-         <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const svgObject = document.getElementById("monSvg");
-            if (svgObject) {
-                svgObject.addEventListener("load", () => {
-                    const svgDoc = svgObject.contentDocument;
-                    if (svgDoc) {
-                        const boutton = svgDoc.querySelector("#path3");
-                        if (cercle) {
-                            boutton.style.fill ="yellow"
-                            //console.log("cercle"); // Affiche l'élément dans la console
-                        } else {
-                            console.error("L'élément #path3 est introuvable dans le SVG.");
-                        }
-                    } else {
-                        console.error("Impossible d'accéder au document SVG.");
-                    }
-                });
-            } else {
-                console.error("L'élément avec l'ID 'monSvg' est introuvable.");
-            }
-        });
-          </script>
-
+            
         </header>
     </body>
 </html>
